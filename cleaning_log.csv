@@ -1,0 +1,126 @@
+id,action,field,original,corrected,reason
+tr-00020,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00020,corrected,txn_date,02/09/2026,2026-09-02,Normalized date to YYYY-MM-DD
+tr-00049,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00058,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00058,corrected,txn_date,26/08/2026,2026-08-26,Normalized date to YYYY-MM-DD
+tr-00060,excluded,assistant_label,"{""category"": ""kyc"", ""priority"": ""P3"", ""amount_paise"": null, ""txn_date"": null, ""t",,Truncated or malformed JSON label
+tr-00072,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00077,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00077,corrected,txn_date,29/07/2026,2026-07-29,Normalized date to YYYY-MM-DD
+tr-00095,excluded,assistant_label,"{""category"": ""other"", ""priority"": ""P3"", ""amount_paise"": null, ""txn_date"": null, ""txn_id"": null, ""c",,Truncated or malformed JSON label
+tr-00114,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00120,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00123,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-00123,corrected,txn_date,21/07/2026,2026-07-21,Normalized date to YYYY-MM-DD
+tr-00125,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P3"", ""amount_paise"": 392500, ""txn_date"": ""2026-08-12"", ""t",,Truncated or malformed JSON label
+tr-00153,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00153,corrected,txn_date,04/09/2026,2026-09-04,Normalized date to YYYY-MM-DD
+tr-00160,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-00160,corrected,txn_date,08/08/2026,2026-08-08,Normalized date to YYYY-MM-DD
+tr-00172,excluded,assistant_label,"{""category"": ""kyc"", ""priority"": ""P3"", ""amount_paise"": null, ""txn_date"": null, ""txn_i",,Truncated or malformed JSON label
+tr-00178,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00192,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00219,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00223,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00249,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00249,corrected,txn_date,23/08/2026,2026-08-23,Normalized date to YYYY-MM-DD
+tr-00258,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00263,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00263,corrected,txn_date,11/07/2026,2026-07-11,Normalized date to YYYY-MM-DD
+tr-00267,excluded,assistant_label,"{""category"": ""kyc"", ""priority"": ""P3"", ""amount_paise"": null, ""txn_date"": null, ""txn_id"": null, ""channe",,Truncated or malformed JSON label
+tr-00320,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00346,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00347,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00347,corrected,txn_date,07/08/2026,2026-08-07,Normalized date to YYYY-MM-DD
+tr-00357,excluded,assistant_label,"{""category"": ""account_access"", ""priority"": ""P2"", ""amount_paise"": null, ""txn_date"": null, ""txn_id"": null, ""channel",,Truncated or malformed JSON label
+tr-00365,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00370,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-00370,corrected,txn_date,10/09/2026,2026-09-10,Normalized date to YYYY-MM-DD
+tr-00385,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00457,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00461,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00475,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00478,excluded,assistant_label,"{""category"": ""refund"", ""priority"": ""P1"", ""amount_paise"": 16041600, ""txn_date"": null, ""txn_id"": ""NP1893758181"", ""channe",,Truncated or malformed JSON label
+tr-00497,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P3"", ""amount_paise"": 242300, ""txn_date"": ",,Truncated or malformed JSON label
+tr-00516,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00556,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-00556,corrected,txn_date,13/07/2026,2026-07-13,Normalized date to YYYY-MM-DD
+tr-00558,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P1"", ""amount_paise"": 15137000, ""txn_date"": ""2026-07",,Truncated or malformed JSON label
+tr-00577,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00577,corrected,txn_date,06/08/2026,2026-08-06,Normalized date to YYYY-MM-DD
+tr-00589,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00602,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00602,corrected,txn_date,29/06/2026,2026-06-29,Normalized date to YYYY-MM-DD
+tr-00605,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P3"", ""amount_paise"": 37700, ""txn_date"":",,Truncated or malformed JSON label
+tr-00606,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00610,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00628,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-00628,corrected,txn_date,13/06/2026,2026-06-13,Normalized date to YYYY-MM-DD
+tr-00656,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00656,corrected,txn_date,20/06/2026,2026-06-20,Normalized date to YYYY-MM-DD
+tr-00670,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00670,corrected,txn_date,20/08/2026,2026-08-20,Normalized date to YYYY-MM-DD
+tr-00674,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P3"", ""amount_paise"": 338500, ""txn_date"": ""2026-09-16"", ""t",,Truncated or malformed JSON label
+tr-00677,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-00677,corrected,txn_date,14/08/2026,2026-08-14,Normalized date to YYYY-MM-DD
+tr-00685,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00704,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-00704,corrected,txn_date,03/06/2026,2026-06-03,Normalized date to YYYY-MM-DD
+tr-00735,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P1"", ""amount_paise"": 29687900, ""txn_date"": null, ""txn_id"": ""NP7764977551"", ""channel"": ""net",,Truncated or malformed JSON label
+tr-00744,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00765,excluded,assistant_label,"{""category"": ""refund"", ""priority"": ""P3"", ""amount_paise"": 13600, ""txn_date"": ""2026-06-27"", ""txn_id"": ""NP4",,Truncated or malformed JSON label
+tr-00778,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00791,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00791,corrected,txn_date,31/08/2026,2026-08-31,Normalized date to YYYY-MM-DD
+tr-00809,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P3"", ""amount_paise"": 97000, ""txn_date"": ""2026-07-05"", ""txn_id"": ""NP8738912683"", ""channel"": ""c",,Truncated or malformed JSON label
+tr-00820,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00820,corrected,txn_date,31/05/2026,2026-05-31,Normalized date to YYYY-MM-DD
+tr-00824,excluded,assistant_label,"{""category"": ""offers"", ""priority"": ""P3"", ""amount_paise"": 27100,",,Truncated or malformed JSON label
+tr-00839,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-00839,corrected,txn_date,17/09/2026,2026-09-17,Normalized date to YYYY-MM-DD
+tr-00846,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P3"", ""amount_paise"": 23000, ""txn_d",,Truncated or malformed JSON label
+tr-00922,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-00958,excluded,assistant_label,"{""category"": ""refund"", ""priority"": ""P3"", ""amount_paise"": 59700, ""txn_date"": null, ""txn_id"": null, ""channel"": ""wallet",,Truncated or malformed JSON label
+tr-00960,excluded,assistant_label,"{""category"": ""account_access"", ""priority"": ""P1"", ""amount_paise"": null, ""txn_date"": null,",,Truncated or malformed JSON label
+tr-00975,excluded,assistant_label,"{""category"": ""fraud"", ""priority"": ""P1"", ""amount_paise"": 94400, ""txn_date"": ""2026-08-",,Truncated or malformed JSON label
+tr-00978,excluded,assistant_label,"{""category"": ""account_access"", ""priority"": ""P2"", ""amount_paise"": null, ""txn_date"": null, ""txn_id"": null, ""chann",,Truncated or malformed JSON label
+tr-00979,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P3"", ""amount_paise"": 83325, ""txn_date"": ""2026-08-07"", ""txn_id"": ""NP7335161087"", ""channe",,Truncated or malformed JSON label
+tr-00980,excluded,assistant_label,"{""category"": ""other"", ""priority"": ""P3"", ""amount_paise"": null, ""txn_date"": nul",,Truncated or malformed JSON label
+tr-00985,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-00985,corrected,txn_date,02/09/2026,2026-09-02,Normalized date to YYYY-MM-DD
+tr-00987,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01006,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01028,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01046,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-01046,corrected,txn_date,25/06/2026,2026-06-25,Normalized date to YYYY-MM-DD
+tr-01070,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P2"", ""amount_paise"": 1787400, ""t",,Truncated or malformed JSON label
+tr-01083,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-01087,excluded,assistant_label,"{""category"": ""offers"", ""priority"": ""P3"", ""amount_paise"": null, ""txn_date"": null, ""txn_i",,Truncated or malformed JSON label
+tr-01089,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01115,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-01133,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01133,corrected,txn_date,25/07/2026,2026-07-25,Normalized date to YYYY-MM-DD
+tr-01143,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01143,corrected,txn_date,12/09/2026,2026-09-12,Normalized date to YYYY-MM-DD
+tr-01151,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-01158,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01158,corrected,txn_date,30/06/2026,2026-06-30,Normalized date to YYYY-MM-DD
+tr-01178,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01178,corrected,txn_date,09/08/2026,2026-08-09,Normalized date to YYYY-MM-DD
+tr-01199,excluded,assistant_label,"{""category"": ""payment_failed"", ""priority"": ""P3"", ""amount_paise"": 141099, ""txn_date"": null, ""txn_id"": null,",,Truncated or malformed JSON label
+tr-01202,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01274,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-01274,corrected,txn_date,23/07/2026,2026-07-23,Normalized date to YYYY-MM-DD
+tr-01286,corrected,priority,prio=medium,P2,Normalized alternative priority field
+tr-01301,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01326,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01331,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01343,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01343,corrected,txn_date,05/07/2026,2026-07-05,Normalized date to YYYY-MM-DD
+tr-01359,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01366,corrected,priority,prio=high,P1,Normalized alternative priority field
+tr-01366,corrected,txn_date,10/09/2026,2026-09-10,Normalized date to YYYY-MM-DD
+tr-01386,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01413,corrected,priority,prio=low,P3,Normalized alternative priority field
+tr-01441,corrected,priority,prio=low,P3,Normalized alternative priority field
