@@ -31,13 +31,13 @@ Evaluation used 200 development examples.
 | QLoRA on raw training data | **57.00%** | **92.56%** | **100%** |
 | QLoRA cleaned-data experiment | 52.00% | 92.38% | 100% |
 
-The raw-data QLoRA adapter was selected because it achieved the highest observed development exact-match accuracy.
+The raw-data QLoRA adapter was selected because it achieved the highest observed development exact-match accuracy before postprocessing.
 
 The controlled experiment coverage was limited; these results should not be interpreted as a comprehensive hyperparameter search.
 
 ## 4. Failure Analysis
 
-Priority prediction was the weakest field, achieving 61.5% accuracy. Among 200 development tickets, 77 priority predictions were incorrect.
+Before postprocessing, priority prediction was the weakest field, achieving 61.5% accuracy. Among 200 development tickets, 77 priority predictions were incorrect.
 
 Notable error patterns included:
 - 25 tickets labeled P1 were predicted as P3.
@@ -47,20 +47,43 @@ Notable error patterns included:
 
 This suggests that the model learned structured extraction more reliably than the conditional business rules governing urgency.
 
-Needs-human accuracy was 87.5%, indicating further room for improvement in escalation decisions.
+Before postprocessing, needs-human accuracy was 87.5%, indicating further room for improvement in escalation decisions.
 
 ## 5. Final Predictions
 
-The selected raw-data QLoRA adapter generated predictions for 400 hidden-test inputs using greedy decoding without post-processing.
+The selected raw-data QLoRA adapter generated predictions for 400 hidden-test inputs using greedy decoding, followed by rule-based priority postprocessing.
 
-All 400 records had unique IDs and parseable JSON outputs. The predictions are saved in `predictions_test.jsonl`.
+The postprocessing rules prioritize fraud, legal escalation, account-access issues, and high-value refund or failed-payment transactions. Specifically, the priority rules use fraud detection, legal escalation indicators, account-access categories, and transaction amount thresholds to determine urgency.
+
+Four malformed transaction dates were also normalized to YYYY-MM-DD format.
+
+### Development Set Results
+
+| Metric | Before Postprocessing | After Postprocessing |
+|---|---:|---:|
+| Exact Match Accuracy | 57.00% | **80.00%** |
+| Priority Accuracy | 61.50% | **98.50%** |
+
+The postprocessing rules were refined using the same 200-example development set. Therefore, the improved results are not independent validation and may overestimate performance on unseen data.
+
+### Final Test Prediction Validation
+
+- Total prediction records: 400
+- Unique ticket IDs: 400
+- JSON validity: 100%
+- Invalid transaction dates: 0
+- Final priority distribution: P1 = 60, P2 = 85, P3 = 255
+
+The final predictions are saved in `predictions_test.jsonl`.
 
 No hidden-test accuracy is claimed because reference labels were unavailable.
 
 ## 6. Limitations and Future Improvements
 
-The main limitation is priority classification, particularly the tendency to underpredict urgent cases.
+The original model's main limitation was priority classification, particularly its tendency to underpredict urgent cases.
 
-Potential improvements include targeted training examples for legal threats and amount thresholds, additional controlled fine-tuning experiments, and validation of business-rule compliance.
+Rule-based postprocessing improved priority accuracy and exact-match accuracy on the development set. However, because the rules were refined on that same set, their generalization to unseen data remains uncertain.
 
-The submitted results reflect the experiments actually completed, including the observed weaknesses.
+Potential improvements include targeted training examples for legal threats and transaction amount thresholds, additional controlled fine-tuning experiments, and evaluation on a separate held-out validation set.
+
+The submitted results reflect the experiments actually completed, including the observed weaknesses and the subsequent postprocessing improvements.
