@@ -91,15 +91,20 @@ Future improvements could include targeted priority examples, stronger rule-awar
 
 ## Test Predictions
 
-The final model generated predictions for **400 test inputs** using greedy decoding without post-processing.
+The final pipeline generated predictions for **400 hidden-test inputs** using the QLoRA fine-tuned model followed by rule-based priority postprocessing.
 
-Validation confirmed:
+Postprocessing applies priority rules for fraud, legal escalation, account-access issues, and high-value refund or failed-payment transactions. Four malformed transaction dates were also normalized to `YYYY-MM-DD`.
+
+Final validation confirmed:
 
 - 400 prediction records
 - 400 unique IDs
 - 100% parseable JSON outputs
+- 0 invalid transaction dates
 
-Hidden-test accuracy is unknown because the test labels were not provided.
+On the 200-example development set, the original model achieved **57.00% exact-match accuracy** and **61.50% priority accuracy**. With rule-based priority postprocessing, these increased to **80.00%** and **98.50%**, respectively.
+
+The postprocessing rules were refined using this same development set, so these results are not independent validation. Hidden-test accuracy remains unknown because test labels were not provided.
 
 ## Limitations
 
